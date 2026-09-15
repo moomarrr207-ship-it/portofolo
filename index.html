@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="site-title">شركة الجميح | صيانة المباني وأعمال الكهرباء</title>
+    <!-- خطوط جوجل العالمية -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800;900&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <!-- مكتبة الأيقونات -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body class="public-body">
+
+    <!-- شريط الإشعارات العلوي -->
+    <div class="top-bar glass-effect">
+        <div class="container d-flex justify-between align-center">
+            <div class="contact-strip">
+                    <span><i class="fa-solid fa-phone"></i> <a id="header-phone" href="tel:33071772">33071772</a></span>
+            </div>
+            <div class="social-strip">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- القائمة الرئيسية (Navbar) -->
+    <nav class="navbar glass-effect" id="main-nav">
+        <div class="container d-flex justify-between align-center">
+            <a href="#" class="brand-logo">
+                <i class="fa-solid fa-building"></i> <span id="brand-company">شركة الجميح</span> <span>لصيانة المباني والكهرباء</span>
+            </a>
+            <button class="mobile-menu" id="mobile-menu" aria-label="فتح القائمة"><i class="fa-solid fa-bars"></i></button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="active">الرئيسية</a></li>
+                <li><a href="#about">عن الشركة</a></li>
+                <li><a href="#services">خدماتنا</a></li>
+                <li><a href="#projects">معرض الأعمال</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#contact-request" class="btn btn-outline-light"><i class="fa-solid fa-paper-plane"></i> ابدأ مشروعك</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- الهيرو سيكشن (خلفية متحركة قوية) -->
+    <header id="hero" class="hero-section">
+        <div class="hero-bg-image"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text-box reveal">
+                <span class="premium-badge"><i class="fa-solid fa-shield-halved"></i> خبرة في الصيانة والأعمال الكهربائية</span>
+                <h1>مبانٍ أكثر أمانًا مع <span>تنفيذ يعتمد عليه</span></h1>
+                <p id="hero-description">نحن في شركة الجميح نقدم خدمات متكاملة لصيانة المباني وأعمال الكهرباء، بتنفيذ دقيق وفريق متخصص يضمن لك الجودة والأمان في كل مشروع.</p>
+                <div class="hero-btns">
+                    <a href="#services" class="btn btn-primary btn-lg"><i class="fa-solid fa-screwdriver-wrench"></i> استكشف خدماتنا</a>
+                    <a href="#contact" class="btn btn-glass btn-lg"><i class="fa-solid fa-headset"></i> استشارة مجانية</a>
+                </div>
+                <div class="trust-indicators mt-30">
+                    <span>موثوقون من قبل:</span>
+                    <i class="fa-brands fa-aws"></i>
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-microsoft"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- نبذة عن الشركة -->
+    <section id="about" class="about-section padding-100">
+        <div class="container about-grid">
+            <div class="about-visual reveal">
+                <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1000&q=85" alt="فريق شركة الجامع يعمل في صيانة المباني">
+                <div class="about-badge"><strong>+8</strong><span>سنوات من<br>الخبرة</span></div>
+            </div>
+            <div class="about-copy reveal">
+                <h4 class="text-accent">عن شركتنا</h4>
+                <h2>نحن نبني حلولاً <span>تترك أثراً</span></h2>
+                <p>شركة الجامع متخصصة في صيانة المباني وأعمال الكهرباء، ونقدم حلولاً عملية للمنازل والشركات والمنشآت مع اهتمام كامل بالتفاصيل.</p>
+                <p>نؤمن أن الموقع الناجح ليس مجرد شكل جميل؛ بل تجربة سهلة، أداء سريع، ورسالة تصل إلى العميل في الوقت المناسب.</p>
+                <div class="about-points">
+                    <span><i class="fa-solid fa-circle-check"></i> فريق متخصص ومتابعة مستمرة</span>
+                    <span><i class="fa-solid fa-circle-check"></i> حلول قابلة للتوسع مع مشروعك</span>
+                </div>
+                <a href="#contact" class="btn btn-primary">تحدث مع فريقنا <i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الخدمات (يتم جلبه من الداتا بيز) -->
+    <section id="services" class="services-section padding-100 bg-dark-2">
+        <div class="container">
+            <div class="section-heading text-center reveal">
+                <h4 class="text-accent">حلولنا المبتكرة</h4>
+                <h2>باقة <span>الخدمات</span> الاحترافية</h2>
+                <div class="separator mx-auto"></div>
+                <p class="text-muted">اختر من بين مجموعة واسعة من الخدمات التي يتم تحديثها وإدارتها مباشرة لتلبية احتياجاتك.</p>
+            </div>
+            
+            <div class="services-grid" id="public-services-grid">
+                <!-- تأثير التحميل -->
+                <div class="loader-container">
+                    <div class="pulsing-circle"></div>
+                    <p>جاري جلب البيانات من السيرفر...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section padding-100">
+        <div class="container">
+            <div class="section-heading text-center reveal"><h4 class="text-accent">أعمالنا</h4><h2>لمحة من <span>مشاريعنا المنفذة</span></h2><div class="separator mx-auto"></div><p class="text-muted">أعمال يضيفها فريقنا من لوحة الإدارة وتظهر هنا مباشرة.</p></div>
+            <div id="public-gallery-grid" class="projects-grid"></div>
+        </div>
+    </section>
+
+    <!-- نافذة الدفع الإلكتروني (Checkout Modal) -->
+    <div id="payment-modal" class="modal-overlay">
+        <div class="checkout-box reveal">
+            <button class="close-modal" onclick="closePaymentModal()"><i class="fa-solid fa-xmark"></i></button>
+            <div class="checkout-header">
+                <h2>إتمام عملية الدفع</h2>
+                <p>أنت على وشك شراء: <strong id="checkout-service-name" class="text-accent"></strong></p>
+                <h3 id="checkout-service-price"></h3>
+                <p class="selected-payment">طريقة الدفع: <strong id="checkout-payment-method">لم تحدد</strong></p>
+            </div>
+            <div class="checkout-body">
+                <form id="payment-form" class="mt-20">
+                    <div class="form-group"><label>طريقة الدفع</label><select id="payment-method" class="form-control" required><option value="">اختر طريقة الدفع</option><option>بطاقة Visa / Mastercard</option><option>تحويل بنكي</option><option>دفع نقدي عند المعاينة</option><option>دفعات مرحلية</option></select></div>
+                    <div class="form-group">
+                        <label>اسم العميل</label>
+                        <input id="payment-customer" type="text" class="form-control" placeholder="اكتب اسمك" required>
+                    </div>
+                    <div class="form-group">
+                        <label>رقم الهاتف</label>
+                        <input id="payment-phone" type="tel" class="form-control" placeholder="33071772" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 btn-lg mt-10" id="btn-process-payment">
+                        <i class="fa-solid fa-check"></i> تأكيد طلب الدفع
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section id="payments" class="payments-section padding-100">
+        <div class="container">
+            <div class="section-heading text-center reveal"><h4 class="text-accent">مرونة تناسبك</h4><h2>طرق دفع <span>آمنة ومتعددة</span></h2><div class="separator mx-auto"></div><p class="text-muted">اختار الطريقة الأنسب لك، وفريقنا يوضح لك كل التفاصيل قبل بدء العمل.</p></div>
+            <div class="payments-grid reveal">
+                <button class="payment-card" data-payment-method="بطاقة Visa / Mastercard"><i class="fa-solid fa-credit-card"></i><h3>بطاقات بنكية</h3><p>Visa و Mastercard عبر بوابات دفع آمنة.</p><b>اختيار الطريقة <i class="fa-solid fa-arrow-left"></i></b></button>
+                <button class="payment-card" data-payment-method="تحويل بنكي"><i class="fa-solid fa-building-columns"></i><h3>تحويل بنكي</h3><p>تحويل مباشر للحساب بعد إرسال تفاصيل المشروع.</p><b>اختيار الطريقة <i class="fa-solid fa-arrow-left"></i></b></button>
+                <button class="payment-card" data-payment-method="دفع نقدي عند المعاينة"><i class="fa-solid fa-money-bill-wave"></i><h3>دفع نقدي</h3><p>الدفع نقدًا عند المعاينة أو حسب الاتفاق.</p><b>اختيار الطريقة <i class="fa-solid fa-arrow-left"></i></b></button>
+                <button class="payment-card" data-payment-method="دفعات مرحلية"><i class="fa-solid fa-handshake"></i><h3>دفعات مرحلية</h3><p>تقسيم قيمة المشروع على مراحل التنفيذ.</p><b>اختيار الطريقة <i class="fa-solid fa-arrow-left"></i></b></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-request" class="contact-request-section padding-100">
+        <div class="container contact-request-grid">
+            <div><span class="eyebrow">احجز معاينتك</span><h2>خلّي فريقنا <em>يتواصل معك</em></h2><p>اكتب بياناتك وموعدك المناسب، وسيصلك اتصال من المدير المسؤول محمد صابر.</p><a href="tel:33071772" class="btn btn-primary"><i class="fa-solid fa-phone"></i> اتصل الآن</a></div>
+            <form id="message-form" class="message-form"><div class="form-row"><input id="message-name" class="form-control" placeholder="الاسم" required><input id="message-phone" class="form-control" placeholder="رقم الهاتف" required></div><select id="message-service" class="form-control" required><option value="">اختر الخدمة المطلوبة</option><option>أعمال الكهرباء</option><option>التشطيبات والديكورات</option><option>الدهانات والصبغ</option><option>الأعمال المعدنية</option><option>الألمنيوم والزجاج</option></select><input id="message-date" type="date" class="form-control"><textarea id="message-text" class="form-control" rows="4" placeholder="اكتب تفاصيل طلبك" required></textarea><button class="btn btn-primary w-100" id="message-submit">إرسال طلب المعاينة <i class="fa-solid fa-paper-plane"></i></button></form>
+        </div>
+    </section>
+
+    <!-- الفوتر الشامل -->
+    <footer id="contact" class="main-footer padding-100">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h2><i class="fa-solid fa-building"></i> شركة الجامع</h2>
+                <p>نقدم خدمات صيانة مبانٍ وأعمال كهرباء احترافية للمنازل والشركات والمنشآت، مع سرعة استجابة وجودة تضمن راحة بالك.</p>
+                <div class="payment-methods-footer mt-20">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-paypal"></i>
+                    <i class="fa-brands fa-bitcoin"></i>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>روابط هامة</h3>
+                <ul>
+                    <li><a href="#hero">الرئيسية</a></li>
+                    <li><a href="#services">خدماتنا</a></li>
+                    <li><a href="#">الشروط والأحكام</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>تواصل معنا مباشرة</h3>
+                <ul class="contact-list">
+                    <li><i class="fa-solid fa-location-dot"></i> <span id="footer-location">الدوحة، قطر</span></li>
+                    <li><i class="fa-solid fa-phone"></i> <a id="footer-phone" href="tel:33071772">33071772</a></li>
+                    <li><i class="fa-solid fa-envelope"></i> moomarrr207@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom text-center mt-30">
+            <p>جميع الحقوق محفوظة &copy; 2026 <strong>شركة الجامع لصيانة المباني وأعمال الكهرباء</strong>.</p>
+        </div>
+    </footer>
+
+    <!-- حاوية الإشعارات -->
+    <div id="toast-container" class="toast-wrapper"></div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
